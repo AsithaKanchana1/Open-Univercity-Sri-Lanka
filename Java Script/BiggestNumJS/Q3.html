@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding set to UTF-8 for proper rendering of characters -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>Q3</title>
+
+    <!--
+    /*
+     * @file Home.html
+     * @author Asitha Kanchana (asitha.contact@gmail.com)
+     * @brief HTML Page For Home 
+     * @version 1.0
+     * @date 2024-06-21
+     * @copyright Copyright@ASI Solution (c) 2024
+     * 
+     * MIT License
+     * 
+     * Copyright (c) 2024 Asitha Kanchana
+     * 
+     */
+    -->
+</head>
+
+<body>
+    <!-- Main heading for the page -->
+    <h1>What Is the biggest Number ?</h1>
+    <!-- Subheadings for displaying the numbers entered by the user -->
+    <h3 id="num1">Number 1 Is : </h3>
+    <h3 id="num2">Number 2 Is : </h3>
+    <h3 id="num3">Number 3 Is : </h3>
+    <!-- Heading for displaying the biggest number -->
+    <h1 id="demo"></h1>
+
+    <!-- Button that triggers the big_number function when clicked -->
+    <button onclick="big_number()">Click Here To Start </button>
+
+    <!-- JavaScript code -->
+    <script>
+        function big_number() {
+            // Declare variables to store user inputs and the biggest number
+            var num1;
+            var num2;
+            var num3;
+            var output;
+
+            // Prompt user for three numbers and convert them to floating-point numbers
+            num1 = parseFloat(prompt("Enter Number 1 : "));
+            num2 = parseFloat(prompt("Enter Number 2 : "));
+            num3 = parseFloat(prompt("Enter Number 3 : "));
+
+            // Determine the biggest number using conditional statements
+            if (num1 >= num2 && num1 >= num3) {
+                output = num1;
+            } else if (num2 >= num1 && num2 >= num3) {
+                output = num2;
+            } else output = num3;
+
+            // Update the HTML content to display the numbers entered by the user
+            document.getElementById("num1").innerHTML = "Number 1 Is : " + num1;
+            document.getElementById("num2").innerHTML = "Number 2 Is : " + num2;
+            document.getElementById("num3").innerHTML = "Number 3 Is : " + num3;
+            // Display the biggest number
+            document.getElementById("demo").innerHTML = "Biggest Number Is : " + output;
+        }
+    </script>
+
+</body>
+
+</html>

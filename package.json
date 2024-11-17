@@ -1,0 +1,11 @@
+{
+  "name": "open-univercity-sri-lanka",
+  "version": "1.0.0",
+  "description": "This repository contains all coding projects and assignments from [Open University Sri Lanka](https://www.ou.ac.lk/). Projects are organized by programming languages and frameworks, such as Python, JavaScript, PHP, Web Development, ASP.NET, and more. Each folder includes projects and files relevant to that specific technology.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

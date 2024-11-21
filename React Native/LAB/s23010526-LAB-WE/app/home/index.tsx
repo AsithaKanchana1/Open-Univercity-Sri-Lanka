@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity, Alert, ScrollView } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Alert,Image, ScrollView } from "react-native";
 import { router } from "expo-router";
 // Alert Box
 const HomeScreen = () => {
@@ -35,8 +35,9 @@ const HomeScreen = () => {
         {/* SOS Button nav */}
         <TouchableOpacity
           style={styles.sosButton}
-          onPress={() => Alert.alert("SOS Activated")} // alart ekak eawa 
+          onPress={() => Alert.alert("SOS Activated ...")} // alart ekak eawa 
         >
+        
           <Text style={styles.btnText}>SOS</Text>
         </TouchableOpacity>
 
@@ -118,6 +119,12 @@ const styles = StyleSheet.create({
     fontSize: 16, 
     fontWeight: "bold",
     textAlign: "center",
+  },
+  imagebtn:{
+    width: 20,
+    height:20,
+
+
   },
 });
 
